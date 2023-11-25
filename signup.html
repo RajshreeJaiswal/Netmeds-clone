@@ -1,0 +1,848 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup page</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: #f6f6f7;
+        }
+        #nav{
+        display:flex;
+        width:98%;
+        height: 60px;
+        background-color: #1b2937;
+        border-radius: 20px;
+        color: white;
+        justify-content: space-between;
+        font-weight: bold;
+        overflow:-moz-hidden-unscrollable;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #first{
+        width:20%;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        
+    }
+    #second{
+        width: 25%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+        #parent2{
+            width: 73%;
+            margin: auto;
+            display: flex;
+            background-color: white;
+            justify-content: space-between;
+            gap: 50px
+            ;
+            margin-top: 50px;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+        .marry{
+            color: a9b1d5;
+            width: 75%;
+        }
+        .phone{
+            color: #64aeb1;
+            margin-top: 60px;
+            font-size: small;
+        }
+        #right{
+            padding-top: 30px;
+        }
+        #right> input{
+            border: none;
+        }
+        .code{
+            font-weight: bolder;
+            font-size: 20px;
+        }
+        #button{
+            width: 73%;
+            padding: 0.2px 10px 0.2px 10px;
+            background-color: #24aeb1;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        #flx{
+            display: flex;
+            gap: 20px;
+            margin-top: 60px;
+        }
+        #proceed{
+            text-align: center;
+            font-weight: bolder;
+        }
+        #raw1 {
+    padding: 14px 0 0 7px;
+    display: flex;
+    /* border: 1px solid; */
+    justify-content: center;
+    gap: 32px;
+    background-color: #32aeb1;
+    align-items: center;
+}
+#raw1 a {
+    text-decoration: none;
+    font-size: 15px;
+    word-spacing: 1.4px;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+#raw1 > img {
+    width: 100%;
+    margin-left: -100px;
+}
+#insideRaw1 {
+    display: flex;
+    padding: 14px;
+    /* border: 1px solid; */
+    font-family: 'Lato', sans-serif;
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+#pincode {
+    border: none;
+    width: 150px;
+    /* border: 1px solid; */
+}
+#searchtab {
+    border: none;
+    width: 399px;
+}
+
+#logo1 {
+    width: 11%;
+}
+
+.line1 {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+
+}
+body {
+  margin: 0;
+  height: 100%;
+}
+
+h2 {
+  text-align: center;
+}
+.logo{
+  text-shadow: 2px 2px 4px #000000;
+  color:white;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+/* background-image: linear-gradient(to right, #9E768F , #9FA4C4); */
+  background-color: #32aeb1;
+  color: #3D0E61;
+  height: 65px;
+  padding: 1em;
+  font-weight:bolder;
+  font-size:25px;
+}
+
+.menu li:hover{
+  color:white;
+  cursor:pointer;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+/*Container for menu button  */
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/*  Creating the menu button */
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 6px;
+  width: 32px;
+  border-radius: 3px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+/*  Adding Functionality to the Hamburger Menu with CSS  */
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(45deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+/*  transforms the hamburger icon into a cross  */
+  transform: rotate(-45deg);
+}
+
+/* ---------raw4------------ */
+
+#raw4 {
+  display: flex;
+  justify-content:space-between;
+  /* border: 1px solid; */
+}
+#raw4 img {
+  width: 14%;
+}
+
+.raw4div > div h3{
+  /* border: 1px solid; */
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+}
+.raw4div > div p {
+  /* border: 1px solid; */
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #989aa7;
+}
+.raw4div {
+  /* border: 1px solid; */
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 12px;
+  border-radius: 9px;
+}
+.raw4div:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.27 ) 0px 3px 12px;
+} 
+.raw4div i{
+  padding-left: 194px;
+  color: #9fa2a4;
+}
+
+/* ----------------raw5---------------- */
+
+#raw5 {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  
+  /* border: 1px solid; */
+}
+#raw5-1 {
+  width: 15%;
+  /* border: 1px solid; */
+}
+#raw5-1 p {
+  padding-left: 9px;
+  font-weight: 400;
+  color: #989aa7;
+}
+#raw5 > i {
+  padding-left: 135px;
+  /* border: 1px solid; */
+}
+#raw5inside {
+  border-radius: 14px;
+  background-color: #ffffff;
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  /* border: 1px solid; */
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;    
+}
+#raw5inside :hover {
+  cursor: pointer;
+}
+#raw5inside img {
+  width: 13%;
+  /* height: 270px; */
+  /* border: 1px solid; */
+  border-radius: 14px;
+}
+#inside p {
+  padding-left: 35px;
+}
+#inside2 {
+  padding-left: 150px;
+}
+#raw5inside button {
+  margin-left: 17px;
+  margin-right: 35px;
+}
+#raw5inside button{
+  border: none;
+  border-radius: 12px;
+  padding: 19px 15px 19px 15px; 
+  background-color: #32aeb1;
+  color: #ffffff;
+  font-family: 'Lato', sans-serif;
+}
+
+/* ----------------raw6--------------- */
+#raw6 {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-content: center;
+  gap: 20px;
+  /* border: 1px solid; */
+  /* height: 270px; */
+  
+}
+#raw6 img {
+  width: 100%;
+
+  border-radius: 9px;
+}
+/* ----------------raw7---------------- */
+ h2{
+  margin-top: 27px;
+  font-weight:600;
+  text-align:left ;
+  font-family: 'Lato', sans-serif;
+ }
+
+ #raw7 {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+ }
+ .raw7class {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* border: 1px solid; */
+  border-radius: 9px;
+  background-color:#ffffff;
+  box-shadow: rgba(0, 0, 0, 0.09 ) 0px 3px 12px;
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;     */
+ }
+ .raw7class :hover {
+  cursor: pointer;
+  
+ }
+ #raw7 img {
+  width: 7%;
+ }
+ #raw7 h4 {
+  font-weight:normal;
+  font-family: 'Lato', sans-serif;
+ }
+ #raw7 p {
+  padding-top: 10px;
+  font-size: smaller;
+  font-family: 'Lato', sans-serif;
+  font-size: 11px;
+  color: #8791a1;
+ }
+
+ /* --------------timer---------- */
+ #clock {
+  padding-top: 9px;
+  padding-left: 27px;
+  padding-bottom: 9px;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  color: #e8673b;
+  background-color: #ffffff;
+ }
+ #clock i {
+  font-weight: bold;
+ }
+ #demo {
+  font-weight: bold;
+  padding-left: 9px;
+  padding-bottom: 2px;
+  /* border: 1px solid; */
+  font-family: 'Lato', sans-serif;
+ }
+/* ------------mega menu------------- */
+
+.nav {
+    margin-top: 75px;
+    display: flex;
+    background-color: #32aeb1;
+    justify-content: center;
+    gap: 90px;
+    /* border: 1px solid; */
+
+}
+.menu {
+
+  gap: 63px;
+}
+
+.navbar {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+}
+.navbar > i {
+    color: #d3f1ea;
+}
+.navbar p {
+    color: #d3f1ea;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+/* -----------Header----------- */
+
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  
+  /* Additional styling for your header */
+}
+
+/* -----------raw3------------- */
+
+ .btn-group {
+  display: flex;
+  padding-top: 14px;
+  padding-left: 15%;
+  padding-bottom: 18px;
+  margin-bottom: 27px;
+  /* margin-top: 10px; */
+  gap: 20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  background-color: #ffffff;
+}
+.btn-group a {
+
+  gap: 4px;
+  text-decoration: none;
+  color: #333333;
+  border: none;
+  background-color: #ffffff;
+}
+.btn-group > button :hover {
+  cursor: pointer;
+}
+#fullcolor{
+  background-image: linear-gradient(to bottom,rgba(36,174,177,0) 50%,rgba(36,174,177,.7) 130%),linear-gradient(to bottom,#fff,#fff);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;    
+  padding: 20px;
+  font-family: 'Lato', sans-serif; 
+  
+}
+#pankajfoot{
+  /* border: 2px solid black; */
+  width: 80%;
+  margin: auto;
+  /* height: 55vh; */
+  background-image: linear-gradient(to bottom,rgba(36,174,177,0) 50%,rgba(36,174,177,.7) 130%),linear-gradient(to bottom,#fff,#fff);
+}
+#footwe{
+  width: 80%;
+  /* margin: auto; */
+}
+#footwe>div{
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  /* margin-bottom: 20px; */
+}
+#footwe>div>p{
+ width: 58%;
+ /* margin-bottom: 20px; */
+}
+#content-foot{
+  display: flex;
+  gap: 20px;
+}
+#imgdivme{
+  display: flex;
+}
+#imgdivme>img{
+  width: 120px;
+  height: 40px;
+}
+#content-foot>div{
+width: 30%;
+margin-bottom: 20px;
+}
+#content-foot>div h4{
+  margin-bottom: 10px;
+}
+#content-foot>div p{
+  
+  margin-bottom: 10px;
+ }
+#content-foot>div>div{
+  /* border: 2px solid black; */
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+#content-foot>div>div>input{
+  height: 30px;
+  border: none;
+  background-color: rgb(255,255,255);
+}
+#content-foot>div>div>button{
+width: 40px;
+border: none;
+border-radius: 5px;
+height: 35px;
+background-color: rgb(243,244,246);
+}
+@media screen and (max-width:1024px) {
+  #footwe>div{
+  display: flex;
+  gap: 40px;
+}
+#footwe>div>p{
+ width: 58%;
+}
+#content-foot{
+  display: flex;
+  gap: 20px;
+}
+#imgdivme{
+  display: flex;
+}
+#content-foot>div>div{
+  /* border: 2px solid black; */
+  display: flex;
+  /* flex-direction: column; */
+}
+}
+@media screen and (min-width:0px) and (max-width:1023px){
+  #footwe>div{
+  display: flex;
+  flex-direction: column;
+}
+/* #footwe>div>p{
+ width: 58%;
+} */
+#content-foot{
+  display: flex;
+  flex-direction: column;
+}
+#content-foot>div>div{
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+}
+}
+      
+    </style>
+</head>
+<body>
+    <header class="sticky-header">
+    <div id="raw1">
+        <div id="logo1">
+            <img src="https://nms-assets.s3-ap-south-1.amazonaws.com/images/cms/aw_rbslider/slides/1663609483_netmeds-new-logo.svg" alt="">
+        </div>
+        <div id="insideRaw1">
+          <div>
+            <input type="number" placeholder="Deliver to 110002" id="pincode">
+          </div>
+          <div>
+            <input type="text" placeholder="Search for medicine & wellness products..." id="searchtab">
+          </div>
+        </div> 
+        <a  href="#####">
+            <div class="line1">
+              <img src="E:\Education\Masai_codes\Project-Unit4-Netmeds\Icons\flex2\upload_rx.svg" alt="">
+              <p>Upload</p> 
+            </div>
+        </a>
+        <a  href="#####">
+          <div class="line1">
+            <img src="E:\Education\Masai_codes\Project-Unit4-Netmeds\Icons\flex2\offers_icon.svg" alt="">
+            <p>Offer</p>
+          </div>
+        </a>
+        <a  href="#####">
+          <div class="line1">
+            <img src="E:\Education\Masai_codes\Project-Unit4-Netmeds\Icons\flex2\cart_icon.svg" alt="">
+            <p>Cart</p> 
+          </div>
+        </a>
+        <a id="line2" href="#####">
+          <div class="line1">
+            <img src="E:\Education\Masai_codes\Project-Unit4-Netmeds\Icons\flex2\profile_icon.svg" alt="" id="signInId">
+            <p>Sign in/Sign up</p> 
+        </div>
+        </a>
+    </div>
+    </header>
+    
+    <section class="nav">
+      <!-- We can also insert any logo here     -->
+  
+      <!--  checkbox to control the icon's state    -->
+      <input id="menu-toggle" type="checkbox" />
+      <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
+      </label>
+      <!--  main menu    -->
+      <ul class="menu">
+        <li>
+          <div class="navbar">
+            <img src="E:\Education\Masai_codes\Project-Unit4-Netmeds\Icons\medicine.svg" alt="">
+            <p>Medicine</p>
+          </div>
+        </li>
+        <li>
+          <div class="navbar">
+            <img src="E:\Education\Masai_codes\Project-Unit4-Netmeds\Icons\wellness.svg"   alt="">
+            <p>Wellness</p>
+          </div>
+        </li>
+        <li>
+          <div class="navbar">
+            <img src="E:\Education\Masai_codes\Project-Unit4-Netmeds\Icons\diagnostics.svg" alt="">
+            <p>Lab Tests</p>
+          </div>
+        </li>
+        <li>
+          <div class="navbar">
+            <img src="E:\Education\Masai_codes\Project-Unit4-Netmeds\Icons\wellness.svg" alt="">
+            <p>Beauty</p>
+          </div>
+        </li>
+        <li>
+          <div class="navbar">
+            <img src="E:\Education\Masai_codes\Project-Unit4-Netmeds\Icons\health-library.svg" alt="">
+            <p>Health Corner</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+  
+      <!-- raw3 -->
+  
+  <!-- ------------------------------ -->
+      <div class="btn-group">
+        <a href="">COVID Essentials</a>
+        <a href="">Diabetes</a>
+        <a href="">Veteriary</a>
+        <a href="">Eyewear</a>
+        <a href="">Ayush</a>
+        <a href="">Ayurvedic</a>
+        <a href="">Homeopathy</a>
+        <a href="">Fitness</a>
+        <a href="">Mom & Baby</a>
+        <a href="">Devices</a>
+        <a href="">Surgicals</a>
+        <a href="">Sexual wellness</a>
+        <a href="">Treatments</a>
+      </div>
+
+  <!-- ============================= -->
+    <div id="parent">
+        <div id="parent2">
+            <div id="left">
+                <img src="https://www.netmeds.com/images/cms/wysiwyg/cms/1680000865_New_Dest_deal.png" alt="">
+            </div>
+            <div id="right">
+                <h2>Sign in / Sign Up</h2>
+                <p class="marry">Sign up or Sign in to access your orders, special offers, health tips and more!</p>
+                <p style="margin-top: 40px; color: #24aeb1; font-weight: bold;" >Phone number</p>
+                <p>+91<input
+                    id="mobile"
+                    class="mfstdDiv"
+                    type="number"
+                    placeholder="Enter your Phone Number"
+                    maxlength="10"
+                    pattern="\d{10}"
+                    required
+                />
+                </p>
+                <div id="button" class="mscndDiv">
+                    <p id="proceed">USE OTP</p>
+                  </div>
+                <div id="flx">
+                    <div>
+                        <img src="https://lh3.googleusercontent.com/jit3ZsqTozaLJhcBtrUU77S4wkNrR7Gykzj7jG5Ha7TROmvzRP0att4Tt2uDQJRSJLNd_N-S5rJxUbfZdXaKcnZKsm-SeeYCfw4kUcN1" alt="">
+                    </div>
+                    <div>
+                        <img src="https://lh3.googleusercontent.com/bGiJ2NyKFPIiYQ6yaKlbc_LrBi4ArBhc7tdxp1fsqham11Clwv3z7XmfVTfQVNiLcKWhfYj_1uXTLMtC7RockM1ygalckC01Tph0s48" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="fullcolor">
+
+    
+      <div id="pankajfoot">
+      <div id="footwe">
+          
+       <div>
+          <img src="https://www.netmeds.com/assets/gloryweb/images/netmeds-footer-logo.svg" alt="">
+          <p>Netmeds.com is one of India’s most trusted pharmacies, dispensing quality medicines at reasonable prices to over 7 million happy customers – PAN India.</p>
+       </div>
+      </div>
+      <hr>
+      <div id="content-foot">
+           <div>
+              <h4>COMPANY</h4>
+              <p>About Netmeds</p>
+              <p>Customers Speak</p>
+              <p>In the News</p>
+              <p>Terms and Conditions</p>
+              <p>Privacy Policy</p>
+              <p>Contact</p>
+           </div>
+           <div>
+              <h4>SHOPPING</h4>
+              <p>Manufacturers</p>
+              <p>Health Articles</p>
+              <p>Offers / Coupons</p>
+              <p>FAQs</p>
+           </div>
+           <div>
+              <h4>BUSINESS</h4>
+              <p>Franchise</p>
+           </div>
+           <div>
+              <h4>CATEGORIES</h4>
+              <p>Ayush</p>
+              <p>Devices</p>
+              <p>Family Care</p>
+              <p>Fitness</p>
+              <p>Lifestyle</p>
+              <p>Personal care</p>
+              <p>Treatments</p>
+           </div>
+           <div>
+              <h4>SOCIAL</h4>
+              <p>Patients Alike</p>
+              <p>Facebook</p>
+              <p>Twitter</p>
+              <p>LinkedIn</p>
+              <p>Youtube</p>
+              <p>Refer & Earn</p>
+           </div>
+           <div>
+              <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+              <p>Get a free subscription to our health and fitness tip and stay tuned to our latest offers</p>
+              <div>
+                  <input type="email" placeholder="Enter your email">
+                  <button></button>
+              </div>
+              <hr>
+              <div id="imgdivme">
+                  <img src="https://www.netmeds.com/assets/gloryweb/images/icons/play_store.png" alt="">
+                  <img src="https://www.netmeds.com/assets/gloryweb/images/icons/app_store.png" alt="">
+              </div>
+           </div>
+      </div>
+    </div>
+    </div>
+</body>
+</html>
+<script>
+    // user-data
+    var arr = JSON.parse(localStorage.getItem("user-data")) || [];
+   
+   3
+   3333 // console.log(arr);
+    var button = document.getElementById("button");
+    button.addEventListener("click", proceed);
+    var error = document.getElementById("req");
+    var mobileArr = [];
+    var check = false;
+  
+    function proceed() {
+      button.style.backgroundCoor = "gray";
+      var mobile = document.getElementById("mobile").value;
+      // console.log(typeof mobile)
+      if (mobile.length < 10 || mobile.length > 10) {
+        error.innerText = "Enter a valid Number";
+      } else {
+        button.style.backgroundColor = "#fc2779";
+        mobileArr.push(mobile);
+        // console.log(arr);
+        localStorage.setItem("mobile-data", JSON.stringify(mobileArr));
+        mobileArr = [];
+        //   window.location.href = "register.html";
+  
+        for (var i = 0; i < arr.length; i++) {
+          if (arr[i].mobile == mobile) {
+            check = true;
+            break;
+          }
+        }
+        if (check) {
+          window.location.href = "index.html";
+        } else {
+          window.location.href = "register.html";
+        }
+      }
+    }
+  </script>

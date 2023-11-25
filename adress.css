@@ -1,0 +1,537 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato',sans-serif;
+    /* font-weight: 500; */
+    /* background-color: rgb(255,255,255); */
+}
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Roboto:wght@100;300;400;500;700;900&display=swap'); */
+#raw1 {
+    padding: 14px 0 0 7px;
+    display: flex;
+    /* border: 1px solid; */
+    justify-content: center;
+    gap: 32px;
+    background-color: #32aeb1;
+    align-items: center;
+  }
+  #raw1 a {
+    text-decoration: none;
+    font-size: 15px;
+    word-spacing: 1.4px;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+  }
+  #raw1 > img {
+    width: 100%;
+    margin-left: -100px;
+  }
+  #insideRaw1 {
+    display: flex;
+    padding: 14px;
+    /* border: 1px solid; */
+    /* font-family: 'Lato', sans-serif; */
+    background-color: #ffffff;
+    border-radius: 6px;
+  }
+  #pincode {
+    border: none;
+    width: 150px;
+    /* border: 1px solid; */
+  }
+  #searchtab {
+    border: none;
+    width: 399px;
+  }
+  
+  #logo1 {
+    width: 11%;
+  }
+  
+  .line1 {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-family: 'Lato', sans-serif;
+  /* font-weight: 400; */
+  font-size: 14px;
+  
+  }
+  /* ------------mega menu------------- */
+  
+  .nav {
+    margin-top: 75px;
+   
+    background-color: #32aeb1;
+    justify-content: center;
+    gap: 90px;
+    /* display:none; */
+    /* border: 1px solid; */
+  
+  }
+  .menu {
+    display: flex;
+    /* grid-template-columns: repeat(5,1fr); */
+    gap: 90px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .menu li {
+    color: #32aeb1;
+  }
+  
+  .navbar {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+  }
+  .navbar > i {
+    color: #d3f1ea;
+  }
+  .navbar p {
+    color: #d3f1ea;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    /* font-weight: 600; */
+  }
+  /* -----------Header----------- */
+  
+  .sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  
+  /* Additional styling for your header */
+  }
+  
+  /* -----------raw3------------- */
+  
+  .btn-group {
+  display: flex;
+  padding-top: 14px;
+  padding-left: 15%;
+  padding-bottom: 18px;
+  margin-bottom: 27px;
+  margin-top: -14px;
+  gap: 20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  background-color: #ffffff;
+  }
+  
+  .btn-group a {
+  font-family: 'Lato', sans-serif;
+  /* font-weight: 700; */
+  gap: 15px;
+  text-decoration: none;
+  color: #333333;
+  border: none;
+  background-color: #ffffff;
+  }
+  .btn-group > button :hover {
+  cursor: pointer;
+  }
+
+
+
+#mainInvert{
+    width: 80%;
+    margin: auto;
+}
+#mainInvert>#photoImage>img{
+width: 100%;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px;
+}
+#divdisplay{
+    width: 70%;
+    /* border: 2px solid crimson; */
+}
+/* #divdisplay>div{
+    
+} */
+/* #divdisplayright>div>p{
+    font-weight: bold;
+} */
+#divdisplayright{
+    width: 25%;
+    border: 1px solid rgb(36,174,177);
+    height: 60vh;
+    border-radius: 15px;
+    padding: 20px;
+    /* text-align: center; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;}
+#payabletotal{
+    color:  rgb(36,174,177);
+    text-decoration: underline;
+    font-weight: bold;
+}
+#divdisplayright div{
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 10px;
+ align-items: center;
+ margin-top: 20px;
+
+}
+#formappend{
+    width: 68%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    /* border: 1px solid rgb(36,174,177); */
+
+}
+#formappend>div>button{
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color:rgb(36,174,177); 
+}
+#formappend{
+    font-weight: 800;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+    padding: 20px;
+    border-radius: 10px;
+}
+#perment{
+    position: relative;
+    display: none;
+    /* padding: 20px; */
+}
+
+.loginform{
+    position: fixed;
+    right: 0%;
+    width: 300px;
+    height: 100%;
+    /* border: 3px solid crimson; */
+    background-color: white;
+    /* text-align: center; */
+    padding: 20px;
+    margin-top: -120px; 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+    
+
+}
+.loginform #close{
+    border: 2px solid rgb(36,174,177);
+    color: white;
+    padding: 3px;
+    background-color: rgb(36,174,177);
+}
+.loginform div>input{
+    margin-bottom: 20px;
+    
+    /* text-decoration: underline; */
+    /* width: 0%; */
+    font-size: 14px;
+    width: 90%;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid rgb(36,174,177);
+
+}
+.loginform div label{
+    color: rgb(36,174,177);
+    font-size: 12px;
+}
+.loginform button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    color: aliceblue;
+    background-color:rgb(36,174,177) ;
+    border-radius: 8px;
+    font-size: 20px;
+}
+#divdisplayright >a{
+    display: block;
+    text-align: center;
+    /* margin: auto */
+}
+
+#divdisplayright >a>button{
+    color: white;
+    background-color: rgb(36,174,177);
+    padding: 10px 6px;
+    margin: 0px 0px 0px 4px;
+    font-size: 14px;
+    /* justify-content: center; */
+    text-align: center;
+    margin: auto;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#perseverance{margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+#adressImage>img{
+    
+    width: 100px;
+    height: 80px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+
+}
+
+#divdisplay>div{
+    /* border:  2px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 40px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;}
+
+#divcombine{
+    display: flex;
+    gap: 30px;
+}
+#divqwer{
+    width: 70%;
+    /* border: 2px solid green; */
+    margin-bottom: 20px;
+    border: 1px solid rgb(36,174,177);
+    border-radius: 10px;
+   
+}
+#divqwer>div{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;    
+    padding: 20px;
+    border-radius: 10px;
+}
+.btn-adress{
+  color: crimson;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+/* .overlay{
+    width: 100%;
+    position: fixed;
+    /* top: 0%; */
+    /* left: 0%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    opacity: 0;
+    transition: 1s; */
+/* }
+.showloginform{
+    top: 50%;
+}
+.showoverlay{
+    opacity: 1;
+    z-index: 1;
+}
+.loginform{
+    width: 350px;
+    padding: 30px 20px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 0px 10px 3px grey;
+    transition: 2s;
+}
+.loginform input{
+    width: 100%;
+    height: 35px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+.loginform button{
+    background-color: black;
+    color: aliceblue;
+    padding: 10px 15px;
+} */
+/* .loginform span{ */
+    /* position: absolute;
+    width: 30px;
+    height: 30px;
+    
+    color: white;
+    line-height: 30px;
+    text-align: center;
+    background-color: green;
+    right: 0;
+    top: 0;
+} */
+
+#addmefast{
+    position: relative;
+}
+#addpsb{
+    /* background-color: black; */
+    position:fixed;
+    width: 400px;
+    height: 80px;
+    top: 11%;
+    left: 41.5%;
+    /* border: 3px solid crimson; */
+    border-radius: 8px;
+    background-color: rgb(25,33,50);
+    display: none;
+    margin: auto;
+    text-align: center;
+    color: white;
+    align-items: center;
+    padding: 20px;
+    
+}
+#okmebye{
+    margin-top: 20px;
+    width: 50px;
+   /* height: 30px; */
+   padding: 8px;
+   background-color: rgb(31,128,224);
+   color: white;
+   border: none;
+   border-radius: 5px;
+   
+ }
+ #divdisplayright>div>h3{
+    font-weight: 500;
+ }
+ #divdisplayright>p{
+    font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: rgb(56,175,178);
+ }
+
+
+
+
+ #fullcolor{
+    background-image: linear-gradient(to bottom,rgba(36,174,177,0) 50%,rgba(36,174,177,.7) 130%),linear-gradient(to bottom,#fff,#fff);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;    
+    padding: 20px;
+    font-family: 'Lato', sans-serif; 
+    
+}
+#pankajfoot{
+    /* border: 2px solid black; */
+    width: 80%;
+    margin: auto;
+    /* height: 55vh; */
+    background-image: linear-gradient(to bottom,rgba(36,174,177,0) 50%,rgba(36,174,177,.7) 130%),linear-gradient(to bottom,#fff,#fff);
+}
+#footwe{
+    width: 80%;
+    /* margin: auto; */
+}
+#footwe>div{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    /* margin-bottom: 20px; */
+}
+#footwe>div>p{
+   width: 58%;
+   /* margin-bottom: 20px; */
+}
+#content-foot{
+    display: flex;
+    gap: 20px;
+}
+#imgdivme{
+    display: flex;
+}
+#imgdivme>img{
+    width: 120px;
+    height: 40px;
+}
+#content-foot>div{
+ width: 30%;
+ margin-bottom: 20px;
+}
+#content-foot>div h4{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+#content-foot>div p{
+    
+    margin-bottom: 10px;
+   }
+#content-foot>div>div{
+    /* border: 2px solid black; */
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+#content-foot>div>div>input{
+    height: 30px;
+    border: none;
+    background-color: rgb(255,255,255);
+}
+#content-foot>div>div>button{
+  width: 40px;
+  border: none;
+  border-radius: 5px;
+  height: 35px;
+  background-color: rgb(243,244,246);
+}
+@media screen and (max-width:1024px) {
+    #footwe>div{
+    display: flex;
+    gap: 40px;
+}
+#footwe>div>p{
+   width: 58%;
+}
+#content-foot{
+    display: flex;
+    gap: 20px;
+}
+#imgdivme{
+    display: flex;
+}
+#content-foot>div>div{
+    /* border: 2px solid black; */
+    display: flex;
+    /* flex-direction: column; */
+}
+}
+@media screen and (min-width:0px) and (max-width:1023px){
+    #footwe>div{
+    display: flex;
+    flex-direction: column;
+}
+/* #footwe>div>p{
+   width: 58%;
+} */
+#content-foot{
+    display: flex;
+    flex-direction: column;
+}
+#content-foot>div>div{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+}

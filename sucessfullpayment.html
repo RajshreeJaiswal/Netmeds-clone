@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Successful</title>
+     <style>
+    .parent {
+    border: 1px solid #f2f2f5;
+    /* width: 60%; */
+    /* height: 650px; */
+    margin: auto;
+    margin-top: 20px !important;
+    /* background-image: linear-gradient(to right, rgb(51,63,72), rgb(51,63,72)); */
+    font-family: Whitney,Helvetica,Arial,sans-serif!important;
+    
+
+}
+#gif {
+     width: 10%;
+    height: 10%;
+}
+.parent >h2 {
+    text-align: center;
+    color:rgb(37, 147, 155);
+    font-weight: bold;
+    
+}
+#link {
+    margin: auto;
+    color: black;
+    font-family: Whitney,Helvetica,Arial,sans-serif;
+    text-decoration: none;
+    
+}
+#link>button{
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  width: 13%;
+  height: 30px;
+  background-color: rgb(51,63,72);;
+  color: #f2f2f5;
+  border-radius: 5px;
+}
+.parent>p{
+  text-align: center;
+
+}
+#yui{
+  text-align: center;
+}
+     </style>
+  </head>
+  <body>
+    <div class="parent" style="margin: auto;text-align: center;">
+        
+      <h2>Payment Successful</h2>
+      <img
+        id="gif"
+        src="https://user-images.githubusercontent.com/12693087/31615154-9c8c4886-b280-11e7-828d-2f64e4250c53.gif"
+      />
+      <br /><br /><br /><br />
+      <h2>Your Order has been Successfully Placed</h2>
+      <p >Order Id :-# <span id="Orderid">1</span></p>
+      <div id="yui">
+       
+      </div>
+      <div id="adress" style="text-align: center;">
+     <h2 style="color: rgb(37, 147, 155);">ADDRESS</h2>
+      </div>
+      <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/thank-you-for-shopping-with-us-flyer-design-template-f5c4c2e4ab93f102c46becd8feb1c5b3.jpg?ts=1618347130" alt="">
+    </div>
+    <a id="link" href="index.html"><button> Return to Home Page</button></a>
+   
+  </body>
+</html>
+<script>
+  var kite=localStorage.getItem("name1");
+  var pre=localStorage.getItem("cartper");
+  var tree=localStorage.getItem("cartp");
+  var arr=JSON.parse(localStorage.getItem("form-address"))|| [];
+    // var  p=document.createElement("p");
+    // p.textContent="No of Items:"+pre;
+
+    // var pa=document.createElement("p");
+    // pa.textContent="Total price:-Rs. "+tree;
+
+    // var na=document.createElement("p");
+    // na.textContent="Name:"+kite;
+    var dert=localStorage.getItem("add")
+    
+     
+    arr.map((ele,idx)=>{
+
+   
+    
+    var tr=document.createElement("div");
+
+    var td4=document.createElement("p");
+    td4.textContent="Name: "+ele.namefirst+" "+ele.namelast;
+
+    var td1=document.createElement("p");
+    td1.textContent= "Pincode: "+ele.pincode;
+
+    var td2=document.createElement("p");
+    td2.textContent="City: "+ele.city;
+
+    var td3=document.createElement("p");
+    td3.textContent="State: "+ele.state;
+
+   
+
+    
+
+
+    var td6=document.createElement("p");
+    td6.textContent="Address: "+ele.address;
+
+     var td7=document.createElement("p");
+    td7.textContent="Phone Number: "+ele.phone;
+
+  
+    tr.append(td4,td2,td3,td1,td6,td7);
+     document.getElementById("adress").append(tr);
+})
+
+
+    // var img=document.createElement("img");
+    //    img.setAttribute("src",);
+    //    img.setAttribute("id","carry");
+
+    // document.querySelector("#yui").append(na);
+    var p=Math.floor((Math.random() * 10000) + 1);
+    document.getElementById("Orderid").textContent=p;
+    console.log(p);
+
+  
+</script>

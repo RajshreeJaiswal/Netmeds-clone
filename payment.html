@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+  
+    <div id="paymentdiv">
+      <header class="sticky-header">
+         <div id="raw1">
+           <div id="logo1">
+             <a href="index.html"><img src="https://nms-assets.s3-ap-south-1.amazonaws.com/images/cms/aw_rbslider/slides/1663609483_netmeds-new-logo.svg" alt=""></a>
+           </div>
+           <div id="insideRaw1">
+             <div>
+               <input type="number" placeholder="Deliver to 110002" id="pincode">
+             </div>
+             <div>
+               <input type="text" placeholder="Search for medicine & wellness products..." id="searchtab">
+             </div>
+           </div> 
+           <a  href="#####">
+               <div class="line1">
+                 <img src="Icons\flex2\upload_rx.svg" alt="">
+                 <p>Upload</p> 
+               </div>
+           </a>
+           <a  href="#####">
+             <div class="line1">
+               <img src="Icons\flex2\offers_icon.svg" alt="">
+               <p>Offer</p>
+             </div>
+           </a>
+           <a  href="cart.html">
+             <div class="line1">
+               <img src="Icons\flex2\cart_icon.svg" alt="">
+               <p>Cart <span id="cartcount"></span></p> 
+             </div>
+           </a>
+           <a id="line2" href="signup.html">
+             <div class="line1">
+               <img src="Icons\flex2\profile_icon.svg" alt="" id="signInId">
+               <p id="user">Sign in/Sign up</p> 
+           </div>
+           </a>
+       </div>
+       </header>
+       
+       <section class="nav">
+         <!-- We can also insert any logo here     -->
+       
+         <!--  checkbox to control the icon's state    -->
+         <!-- <input id="menu-toggle" type="checkbox" /> -->
+         <!-- <label class="menu-button-container" for="menu-toggle">
+           <div class="menu-button"></div> -->
+         </label>
+         <!--  main menu    -->
+         <ul class="menu">
+           <li>
+             <div class="navbar">
+               <img src="Icons\medicine.svg" alt="">
+               <p>Medicine</p>
+             </div>
+           </li>
+           <li>
+             <div class="navbar">
+               <img src="Icons\wellness.svg"   alt="">
+               <p>Wellness</p>
+             </div>
+           </li>
+           <li>
+             <div class="navbar">
+               <img src="Icons\diagnostics.svg" alt="">
+               <p>Lab Tests</p>
+             </div>
+           </li>
+           <li>
+             <div class="navbar">
+               <img src="Icons\wellness.svg" alt="">
+               <p>Beauty</p>
+             </div>
+           </li>
+           <li>
+             <div class="navbar">
+               <img src="Icons\health-library.svg" alt="">
+               <p>Health Corner</p>
+             </div>
+           </li>
+         </ul>
+       </section>
+       
+         <!-- raw3 -->
+       
+       <!-- ------------------------------ -->
+         <div class="btn-group">
+           <a href="product.html">COVID Essentials</a>
+           <a href="diabetes.html">Diabetes</a>
+           <a href="Veterinary.html">Veteriary</a>
+           <a href="eyewear.html">Eyewear</a>
+           <a href="product.html">Ayush</a>
+           <a href="ayurvedic.html">Ayurvedic</a>
+           <a href="Veterinary.html">Homeopathy</a>
+           <a href="fitness.html">Fitness</a>
+           <a href="product.html">Mom & Baby</a>
+           <a href="Veterinary.html">Devices</a>
+           <a href="product.html">Surgicals</a>
+           <a href="eyewear.html">Sexual wellness</a>
+           <a href="fitness.html">Treatments</a>
+         </div>
+      <div id="paymentImg">
+        <img src="payment2.png" alt="">
+      </div>
+      <div id="payment-main3">
+         <div id="div1pay">
+      <div id="payment-3">
+         <div>
+            <h4>UPI</h4>
+            <div>
+            <div>
+               <img src="https://images.hindustantimes.com/tech/img/2020/11/05/1600x900/image_-_2020-11-05T095740.083_1604550459365_1604550465218_1604550598928.jpg" alt="">
+               <h2>GPay</h2>
+            </div>
+            <div>
+               <input type="radio" onclick="showbutton()" id="radio">
+            </div>
+           
+         </div>
+         <div id="buttonofpay">
+           
+         </div>
+         </div>
+      </div>
+         <div id="div2pay">
+            <div>
+               <h4>CREDIT & DEBIT CARDS</h4>
+               <hr>
+               <div>
+               <div>
+                  <button id="showpopuppay" onclick="showpopuppay()">+</button>
+               </div>
+                  <div>
+                     <h2>Add New Card</h2>
+                     <p>Save and pay with your cards</p>
+                  </div>
+               
+            </div>
+            </div>
+            <div id="overpay">
+                 <section id="pankajsec">
+                  <div class="container">
+                     <!-- <button id="pankajbtn" onclick="closeme()">close</button> -->
+                     <div class="card">
+                         <div class="form">
+                             <div class="left-side">
+                                 <span class="success">Otp Sent</span>
+                                 <div class="image">
+                                      
+                                      <img src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg">
+                                 </div>
+                                 <div class="debit-card">
+                                     <div class="card_name">
+                                        <small>Cardholder name</small>
+                                        <span class="user_name"></span>
+                                     </div>
+                                         <div class="num_expiry">
+                                             <div class="card_number">
+                                                <small>Card Number</small>
+                                                <span class="set_card_number">0000 0000 0000 0000</span>
+                                             </div>
+                                             <div class="card_cvv">
+                                                <small>Valid upto</small>
+                                                <span class="user_card_cvv">MM/YYYY</span>
+                                            </div>
+                                     
+                                         </div>
+                                 </div> 
+                                  
+                 
+                                 
+                             </div>
+                             <div class="right-side">
+                                 <h3>Payment details</h3>
+                                 <div class="input-text">
+                                     <input type="text" id="user_name_input" onkeyup="userName(this.value)" placeholder="Username" require>
+                                     <span>Cardholder name</span>
+                                 </div>
+                                 <div class="input-text">
+                                     <input type="text" id="user_card_number_input" placeholder="0000 0000 0000 0000" onkeyup="userCardNumber(this.value)" data-slots="0" data-accept="\d" require>
+                                     <span>Card number</span>
+                                 </div> 
+                                 <div class="input-div">
+                                     <div class="input-text">
+                                        <input type="text" onkeyup="usercardcvv(this.value)" placeholder="MM/YYYY" data-slots="MY" require>
+                                        <span>Valid upto</span>
+                                     </div>
+                                     <div class="input-text ">
+                                        <input type="text" placeholder="000" data-slots="0" data-accept="\d" size="3" require>
+                                        <span>CVV</span>
+                                     </div>
+                                 </div> 
+                                 <div class="button">
+                                     <button class="click-pay">Pay</button>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 </section>
+            </div>
+         </div>
+         <div id="paytmpaym">
+           <h3>PREFERED PAYMENT</h3>
+           <div>
+           <div>
+           <div>
+            <img src="https://aniportalimages.s3.amazonaws.com/media/details/pauyau_PlnW2rW.jpg" alt="">
+            
+           </div>
+           <div>
+            <h2>Paytm</h2>
+            <p>Pay using Paytm wallet to get cashback between Rs. 30 to Rs. 600. Minimum order value: Rs. 999. TCA.</p>
+         </div>
+      </div>
+      <div>
+         <p id="perpopi" onclick="popClick()">Link</p>
+      </div>
+   </div>
+   
+         
+         </div>
+         <div id="payment-4">
+            <div>
+               <h4>OTHER PAYMENT</h4>
+               <div>
+               <div>
+                  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/71/PhonePe_Logo.svg/2560px-PhonePe_Logo.svg.png" alt="">
+                  <h2>Phone Pay</h2>
+               </div>
+               <div>
+                  <input type="radio" onclick="showpaytm()" id="rdio">
+               </div>
+              
+            </div>
+            <div id="btnofpaytm">
+              
+            </div>
+            </div>
+         </div>
+      
+   </div>
+   <section id="pankaj">
+ <div id="shubhamC">
+    <p id="pankajClose" onclick="closepankajpopup()">close</p>
+    <div id="power">
+    <div>
+      <h3 style="margin-bottom: 20px;">LINK WALLET</h3>
+
+   <div id="psbe">
+      <img src="https://aniportalimages.s3.amazonaws.com/media/details/pauyau_PlnW2rW.jpg" alt="">
+      <h3>PAYTM</h3>
+
+   </div>
+   <div>
+      <p style="color: rgb(56,175,178);">Phone Number</p>
+      <p>+91 <span>| <span id="mobileno">9021733853</span></span></p>
+   </div>
+    </div>
+    <button onclick="redirectme()">Pay</button>
+   </div>
+ </div>
+   </section>
+      <div id="paymentImgdiv1">
+
+          <p>PAYMENT DETAILS</p>
+          <div>
+             <h3 >MRP Total </h3>
+             <p id="totalmrp1"></p>
+          </div>
+          <div>
+             <h3 >Additional Discount</h3>
+             <p id="adiscount1">0</p>
+          </div>
+          <div>
+             <h3 >Total Amount</h3>
+             <p id="totalamount1">0</p>
+          </div>
+          <div>
+             <h3 >Shipping Charges</h3>
+             <p id="shipc1">Rs. 0.00</p>
+          </div>
+          <div>
+             <h3 style="color: rgb(36,174,177);font-weight: bold;text-decoration: underline;">Total Payable</h3>
+             <p  id="payabletotal1" style="color: rgb(36,174,177);font-weight: bold;text-decoration: underline;">0</p>
+          </div>
+          <div>
+             <h3 >Total Savings</h3>
+             <p id="totalsave1">0</p>
+          </div>
+ 
+          
+            
+          
+         </div>
+        </div>
+     
+      
+    </div>
+    <div id="fullcolor">
+
+    
+      <div id="pankajfoot">
+      <div id="footwe">
+          
+       <div>
+          <img src="https://www.netmeds.com/assets/gloryweb/images/netmeds-footer-logo.svg" alt="">
+          <p>Netmeds.com is one of India’s most trusted pharmacies, dispensing quality medicines at reasonable prices to over 7 million happy customers – PAN India.</p>
+       </div>
+      </div>
+      <hr>
+      <div id="content-foot">
+           <div>
+              <h4>COMPANY</h4>
+              <p>About Netmeds</p>
+              <p>Customers Speak</p>
+              <p>In the News</p>
+              <p>Terms and Conditions</p>
+              <p>Privacy Policy</p>
+              <p>Contact</p>
+           </div>
+           <div>
+              <h4>SHOPPING</h4>
+              <p>Manufacturers</p>
+              <p>Health Articles</p>
+              <p>Offers / Coupons</p>
+              <p>FAQs</p>
+           </div>
+           <div>
+              <h4>BUSINESS</h4>
+              <p>Franchise</p>
+           </div>
+           <div>
+              <h4>CATEGORIES</h4>
+              <p>Ayush</p>
+              <p>Devices</p>
+              <p>Family Care</p>
+              <p>Fitness</p>
+              <p>Lifestyle</p>
+              <p>Personal care</p>
+              <p>Treatments</p>
+           </div>
+           <div>
+              <h4>SOCIAL</h4>
+              <p>Patients Alike</p>
+              <p>Facebook</p>
+              <p>Twitter</p>
+              <p>LinkedIn</p>
+              <p>Youtube</p>
+              <p>Refer & Earn</p>
+           </div>
+           <div>
+              <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+              <p>Get a free subscription to our health and fitness tip and stay tuned to our latest offers</p>
+              <div>
+                  <input type="email" placeholder="Enter your email">
+                  <button></button>
+              </div>
+              <hr>
+              <div id="imgdivme">
+                  <img src="https://www.netmeds.com/assets/gloryweb/images/icons/play_store.png" alt="">
+                  <img src="https://www.netmeds.com/assets/gloryweb/images/icons/app_store.png" alt="">
+              </div>
+           </div>
+      </div>
+    </div>
+    </div>
+</body>
+</html>
+<script src="payment.js"></script>
