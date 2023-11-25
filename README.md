@@ -23,6 +23,7 @@ Welcome to the NetMeds Clone project! Discover a seamless healthcare experience 
 5. Suraj Kumar Yadav
 
 ## Deployment Link 
--[https://64e7ae187eb6d30b420f1d46--lucky-cupcake-e72a9a.netlify.app/]
+-[https://65618d1fe167cf74a1530337--soft-cucurucho-8292f7.netlify.app/]
+
 
 
